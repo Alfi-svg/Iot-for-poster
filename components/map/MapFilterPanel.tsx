@@ -189,6 +189,10 @@ export function MapFilterPanel({
             <span className="w-2.5 h-2.5 rounded-full bg-red-600 border border-white shadow-sm flex-shrink-0" />
             <span>Red Dot: Sensor QC Drift Flag</span>
           </div>
+          <div className="flex items-center gap-2 pt-1 border-t border-slate-100 text-[11px] text-slate-500">
+            <span className="w-4 h-2.5 rounded border border-dashed border-emerald-500 bg-emerald-100/40 flex-shrink-0" />
+            <span>Dashed Grid: Sentinel / Landsat Tiles</span>
+          </div>
         </div>
       </div>
     </div>

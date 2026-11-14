@@ -217,12 +217,15 @@ export default function MapPage() {
         />
 
         {/* Floating Quick Status Overlay */}
-        <div className="absolute bottom-4 left-4 z-10 bg-white/95 backdrop-blur-md px-3 py-1.5 rounded-lg shadow-lg border border-slate-200 text-xs font-mono text-slate-700 hidden sm:flex items-center gap-3">
-          <span>Active Sites: <strong>{filteredSites.length}</strong></span>
-          <span className="text-slate-300">|</span>
-          <span>Datum: WGS84 (EPSG:4326)</span>
-          <span className="text-slate-300">|</span>
-          <span className="text-emerald-800 font-semibold">Live Telemetry Active</span>
+        <div className="absolute bottom-4 left-4 z-10 bg-slate-900/90 text-white backdrop-blur-md px-3.5 py-1.5 rounded-lg shadow-xl border border-slate-700 text-xs font-mono hidden sm:flex items-center gap-3">
+          <span className="flex items-center gap-1.5 text-emerald-400 font-semibold">
+            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+            Active Sites: {filteredSites.length}
+          </span>
+          <span className="text-slate-600">|</span>
+          <span className="text-slate-300">🛰️ Google Satellite Layer</span>
+          <span className="text-slate-600">|</span>
+          <span className="text-slate-400">EPSG:4326 (WGS84)</span>
         </div>
       </div>
 
